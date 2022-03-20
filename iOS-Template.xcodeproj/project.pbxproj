@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9DBD666A4402FDF552DA39CF /* Pods_iOS_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */; };
+		FE7347F527E715A60019DB4F /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; };
+		FE7347F627E715A60019DB4F /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE7347F927E715AA0019DB4F /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F827E715AA0019DB4F /* UIComponents.framework */; };
+		FE7347FA27E715AA0019DB4F /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F827E715AA0019DB4F /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE7347FC27E715AD0019DB4F /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347FB27E715AD0019DB4F /* Utilities.framework */; };
+		FE7347FD27E715AD0019DB4F /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347FB27E715AD0019DB4F /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FEBA464027E648D0009A75F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA463F27E648D0009A75F9 /* AppDelegate.swift */; };
 		FEBA464227E648D0009A75F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA464127E648D0009A75F9 /* SceneDelegate.swift */; };
 		FEBA464427E648D0009A75F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA464327E648D0009A75F9 /* ViewController.swift */; };
@@ -17,10 +23,32 @@
 		FEBA464F27E648D1009A75F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA464D27E648D1009A75F9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FE7347F727E715A60019DB4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE7347FA27E715AA0019DB4F /* UIComponents.framework in Embed Frameworks */,
+				FE7347FD27E715AD0019DB4F /* Utilities.framework in Embed Frameworks */,
+				FE7347F627E715A60019DB4F /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B568054FDB8B78B36A64A /* Pods-iOS-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3233FF4021667B45E2EF20 /* Pods-iOS-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.release.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.release.xcconfig"; sourceTree = "<group>"; };
+		FE73479D27E714C40019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7347A127E714CA0019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7347F427E715A60019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7347F827E715AA0019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7347FB27E715AD0019DB4F /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Template-Bridging-Header.h"; sourceTree = "<group>"; };
 		FEBA463C27E648D0009A75F9 /* iOS-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBA463F27E648D0009A75F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEBA464127E648D0009A75F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +66,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBD666A4402FDF552DA39CF /* Pods_iOS_Template.framework in Frameworks */,
+				FE7347F927E715AA0019DB4F /* UIComponents.framework in Frameworks */,
+				FE7347F527E715A60019DB4F /* DataProvider.framework in Frameworks */,
+				FE7347FC27E715AD0019DB4F /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +78,11 @@
 		61CCB6795EDA5FF348F38BD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE7347FB27E715AD0019DB4F /* Utilities.framework */,
+				FE7347F827E715AA0019DB4F /* UIComponents.framework */,
+				FE7347F427E715A60019DB4F /* DataProvider.framework */,
+				FE7347A127E714CA0019DB4F /* DataProvider.framework */,
+				FE73479D27E714C40019DB4F /* UIComponents.framework */,
 				04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */,
 			);
 			name = Frameworks;
@@ -58,8 +94,15 @@
 				657B568054FDB8B78B36A64A /* Pods-iOS-Template.debug.xcconfig */,
 				EE3233FF4021667B45E2EF20 /* Pods-iOS-Template.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE73480A27E717E40019DB4F /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */,
+			);
+			path = Configure;
 			sourceTree = "<group>";
 		};
 		FEBA463327E648D0009A75F9 = {
@@ -83,6 +126,7 @@
 		FEBA463E27E648D0009A75F9 /* iOS-Template */ = {
 			isa = PBXGroup;
 			children = (
+				FE73480A27E717E40019DB4F /* Configure */,
 				FEBA463F27E648D0009A75F9 /* AppDelegate.swift */,
 				FEBA464127E648D0009A75F9 /* SceneDelegate.swift */,
 				FEBA464327E648D0009A75F9 /* ViewController.swift */,
@@ -107,6 +151,7 @@
 				FEBA463927E648D0009A75F9 /* Frameworks */,
 				FEBA463A27E648D0009A75F9 /* Resources */,
 				98455DC3585A96D402F8C093 /* [CP] Embed Pods Frameworks */,
+				FE7347F727E715A60019DB4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +174,7 @@
 				TargetAttributes = {
 					FEBA463B27E648D0009A75F9 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -361,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -370,6 +417,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +426,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "testapp.iOS-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Template/Configure/iOS-Template-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -398,6 +449,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "testapp.iOS-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Template/Configure/iOS-Template-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

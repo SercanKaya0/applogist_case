@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		FE7347C627E715580019DB4F /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7347C527E715580019DB4F /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE73480327E716130019DB4F /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */; };
+		FE73480427E716130019DB4F /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73480027E716130019DB4F /* UICollectionView+Extensions.swift */; };
+		FE73480527E716130019DB4F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73480127E716130019DB4F /* UIView+Extensions.swift */; };
+		FE73480627E716130019DB4F /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73480227E716130019DB4F /* UITableView+Extensions.swift */; };
+		FE73480927E7164A0019DB4F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73480827E7164A0019DB4F /* ReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE7347C227E715580019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347C527E715580019DB4F /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
+		FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		FE73480027E716130019DB4F /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		FE73480127E716130019DB4F /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FE73480227E716130019DB4F /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		FE73480827E7164A0019DB4F /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +55,30 @@
 		FE7347C427E715580019DB4F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FE73480727E7164A0019DB4F /* Protocols */,
+				FE7347FE27E716040019DB4F /* Extensions */,
 				FE7347C527E715580019DB4F /* UIComponents.h */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FE7347FE27E716040019DB4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */,
+				FE73480027E716130019DB4F /* UICollectionView+Extensions.swift */,
+				FE73480227E716130019DB4F /* UITableView+Extensions.swift */,
+				FE73480127E716130019DB4F /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE73480727E7164A0019DB4F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE73480827E7164A0019DB4F /* ReusableView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +124,7 @@
 				TargetAttributes = {
 					FE7347C127E715580019DB4F = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -129,6 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE73480527E716130019DB4F /* UIView+Extensions.swift in Sources */,
+				FE73480927E7164A0019DB4F /* ReusableView.swift in Sources */,
+				FE73480427E716130019DB4F /* UICollectionView+Extensions.swift in Sources */,
+				FE73480327E716130019DB4F /* NSMutableAttributedString+Extension.swift in Sources */,
+				FE73480627E716130019DB4F /* UITableView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +295,7 @@
 		FE7347CA27E715580019DB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -267,6 +305,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,15 +315,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = testapp.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FE7347CB27E715580019DB4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -294,6 +336,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,9 +346,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = testapp.UIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
