@@ -6,10 +6,10 @@
 //  Copyright © 2020 Mobillium. All rights reserved.
 //
 
-public protocol NYTRequest: DecodableResponseRequest {}
+public protocol BaseRequest: DecodableResponseRequest {}
 
 // MARK: - RequestEncoding
-public extension NYTRequest {
+public extension BaseRequest {
     var encoding: RequestEncoding {
         switch method {
         case .get:
@@ -21,21 +21,21 @@ public extension NYTRequest {
 }
 
 // MARK: - url
-public extension NYTRequest {
+public extension BaseRequest {
     var url: String {
         return "BASE_URL" + path
     }
 }
 
 // MARK: - RequestParameters
-public extension NYTRequest {
+public extension BaseRequest {
     var parameters: RequestParameters {
         return [:]
     }
 }
 
 // MARK: - RequestHeaders
-public extension NYTRequest {
+public extension BaseRequest {
     var headers: RequestHeaders {
         return [:]
     }
