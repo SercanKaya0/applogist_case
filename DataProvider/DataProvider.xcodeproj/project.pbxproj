@@ -8,11 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		11AF768F73747502F945F601 /* libPods-DataProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F19CE31AEBD897BCA781D5 /* libPods-DataProvider.a */; };
+		5740043027E7222A00B36934 /* AFError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740042E27E7222A00B36934 /* AFError+Extensions.swift */; };
+		5740043127E7222A00B36934 /* Encodable+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740042F27E7222A00B36934 /* Encodable+Exntension.swift */; };
+		5740043927E7224100B36934 /* DecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043327E7224100B36934 /* DecodableResponseRequest.swift */; };
+		5740043A27E7224100B36934 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043427E7224100B36934 /* Typealias.swift */; };
+		5740043B27E7224100B36934 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043527E7224100B36934 /* RequestProtocol.swift */; };
+		5740043C27E7224100B36934 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043627E7224100B36934 /* RequestMethod.swift */; };
+		5740043D27E7224100B36934 /* RequestEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043727E7224100B36934 /* RequestEncoding.swift */; };
+		5740043E27E7224100B36934 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740043827E7224100B36934 /* DataProviderProtocol.swift */; };
+		5740044327E7225500B36934 /* APIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740044027E7225500B36934 /* APIDataProvider.swift */; };
+		5740044427E7225500B36934 /* APIRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740044127E7225500B36934 /* APIRequestAdapter.swift */; };
+		5740044527E7225500B36934 /* APIDecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740044227E7225500B36934 /* APIDecodableResponseRequest.swift */; };
+		5740044827E7229900B36934 /* UserCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740044727E7229900B36934 /* UserCacheHelper.swift */; };
 		FE7347DA27E715690019DB4F /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7347D927E715690019DB4F /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11F19CE31AEBD897BCA781D5 /* libPods-DataProvider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5740042E27E7222A00B36934 /* AFError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFError+Extensions.swift"; sourceTree = "<group>"; };
+		5740042F27E7222A00B36934 /* Encodable+Exntension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Exntension.swift"; sourceTree = "<group>"; };
+		5740043327E7224100B36934 /* DecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableResponseRequest.swift; sourceTree = "<group>"; };
+		5740043427E7224100B36934 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		5740043527E7224100B36934 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		5740043627E7224100B36934 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		5740043727E7224100B36934 /* RequestEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncoding.swift; sourceTree = "<group>"; };
+		5740043827E7224100B36934 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		5740044027E7225500B36934 /* APIDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
+		5740044127E7225500B36934 /* APIRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestAdapter.swift; sourceTree = "<group>"; };
+		5740044227E7225500B36934 /* APIDecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDecodableResponseRequest.swift; sourceTree = "<group>"; };
+		5740044727E7229900B36934 /* UserCacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCacheHelper.swift; sourceTree = "<group>"; };
 		8C80EA5F9125D8732530DD42 /* Pods-DataProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.release.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.release.xcconfig"; sourceTree = "<group>"; };
 		E9013398018D700BB01FEA03 /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		FE7347D627E715690019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +55,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5740042D27E7222A00B36934 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5740042E27E7222A00B36934 /* AFError+Extensions.swift */,
+				5740042F27E7222A00B36934 /* Encodable+Exntension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5740043227E7224100B36934 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5740043327E7224100B36934 /* DecodableResponseRequest.swift */,
+				5740043427E7224100B36934 /* Typealias.swift */,
+				5740043527E7224100B36934 /* RequestProtocol.swift */,
+				5740043627E7224100B36934 /* RequestMethod.swift */,
+				5740043727E7224100B36934 /* RequestEncoding.swift */,
+				5740043827E7224100B36934 /* DataProviderProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5740043F27E7225500B36934 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5740044027E7225500B36934 /* APIDataProvider.swift */,
+				5740044127E7225500B36934 /* APIRequestAdapter.swift */,
+				5740044227E7225500B36934 /* APIDecodableResponseRequest.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5740044627E7229900B36934 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5740044727E7229900B36934 /* UserCacheHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		BF62D2B7BF311848C63EECAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +134,10 @@
 		FE7347D827E715690019DB4F /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				5740044627E7229900B36934 /* Helper */,
+				5740043F27E7225500B36934 /* Manager */,
+				5740043227E7224100B36934 /* Core */,
+				5740042D27E7222A00B36934 /* Extension */,
 				FE7347D927E715690019DB4F /* DataProvider.h */,
 			);
 			path = DataProvider;
@@ -180,6 +248,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5740043927E7224100B36934 /* DecodableResponseRequest.swift in Sources */,
+				5740043D27E7224100B36934 /* RequestEncoding.swift in Sources */,
+				5740044327E7225500B36934 /* APIDataProvider.swift in Sources */,
+				5740043127E7222A00B36934 /* Encodable+Exntension.swift in Sources */,
+				5740043A27E7224100B36934 /* Typealias.swift in Sources */,
+				5740044527E7225500B36934 /* APIDecodableResponseRequest.swift in Sources */,
+				5740043E27E7224100B36934 /* DataProviderProtocol.swift in Sources */,
+				5740044427E7225500B36934 /* APIRequestAdapter.swift in Sources */,
+				5740043027E7222A00B36934 /* AFError+Extensions.swift in Sources */,
+				5740043C27E7224100B36934 /* RequestMethod.swift in Sources */,
+				5740043B27E7224100B36934 /* RequestProtocol.swift in Sources */,
+				5740044827E7229900B36934 /* UserCacheHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
