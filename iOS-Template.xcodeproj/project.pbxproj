@@ -8,16 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9DBD666A4402FDF552DA39CF /* Pods_iOS_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */; };
+		FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */; };
+		FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626E2825A6A8009CCA73 /* AppDelegate.swift */; };
+		FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */; };
+		FE4262782825A6D9009CCA73 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262752825A6D9009CCA73 /* DataProvider.swift */; };
+		FE4262792825A6D9009CCA73 /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262762825A6D9009CCA73 /* APILogger.swift */; };
+		FE42627A2825A6D9009CCA73 /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262772825A6D9009CCA73 /* APIRequestInterceptor.swift */; };
+		FE42628E2825A73F009CCA73 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42627D2825A73F009CCA73 /* Animator.swift */; };
+		FE42628F2825A73F009CCA73 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42627E2825A73F009CCA73 /* Router.swift */; };
+		FE4262902825A73F009CCA73 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262802825A73F009CCA73 /* ModalTransition.swift */; };
+		FE4262912825A73F009CCA73 /* SetRootViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262812825A73F009CCA73 /* SetRootViewControllerTransition.swift */; };
+		FE4262922825A73F009CCA73 /* PlaceOnWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262822825A73F009CCA73 /* PlaceOnWindow.swift */; };
+		FE4262932825A73F009CCA73 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262832825A73F009CCA73 /* Transition.swift */; };
+		FE4262942825A73F009CCA73 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262842825A73F009CCA73 /* PushTransition.swift */; };
+		FE4262972825A73F009CCA73 /* PopToBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262892825A73F009CCA73 /* PopToBack.swift */; };
+		FE4262982825A73F009CCA73 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628A2825A73F009CCA73 /* AppRouter.swift */; };
+		FE4262992825A73F009CCA73 /* PopToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628B2825A73F009CCA73 /* PopToViewController.swift */; };
+		FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628C2825A73F009CCA73 /* DismissableRoute.swift */; };
+		FE42629B2825A73F009CCA73 /* PopToRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628D2825A73F009CCA73 /* PopToRoute.swift */; };
+		FE4262A22825A7EA009CCA73 /* ExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */; };
+		FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */; };
+		FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */; };
+		FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */; };
 		FE7347F527E715A60019DB4F /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; };
 		FE7347F627E715A60019DB4F /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE7347F927E715AA0019DB4F /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F827E715AA0019DB4F /* UIComponents.framework */; };
 		FE7347FA27E715AA0019DB4F /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F827E715AA0019DB4F /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE7347FC27E715AD0019DB4F /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347FB27E715AD0019DB4F /* Utilities.framework */; };
 		FE7347FD27E715AD0019DB4F /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347FB27E715AD0019DB4F /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FEBA464027E648D0009A75F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA463F27E648D0009A75F9 /* AppDelegate.swift */; };
-		FEBA464227E648D0009A75F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA464127E648D0009A75F9 /* SceneDelegate.swift */; };
-		FEBA464427E648D0009A75F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA464327E648D0009A75F9 /* ViewController.swift */; };
-		FEBA464727E648D0009A75F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA464527E648D0009A75F9 /* Main.storyboard */; };
 		FEBA464A27E648D0009A75F9 /* iOS_Template.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEBA464827E648D0009A75F9 /* iOS_Template.xcdatamodeld */; };
 		FEBA464C27E648D1009A75F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBA464B27E648D1009A75F9 /* Assets.xcassets */; };
 		FEBA464F27E648D1009A75F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA464D27E648D1009A75F9 /* LaunchScreen.storyboard */; };
@@ -43,6 +61,28 @@
 		04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B568054FDB8B78B36A64A /* Pods-iOS-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3233FF4021667B45E2EF20 /* Pods-iOS-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.release.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.release.xcconfig"; sourceTree = "<group>"; };
+		FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDeleagate+Firebase.swift"; sourceTree = "<group>"; };
+		FE42626E2825A6A8009CCA73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+IQKeyboardManager.swift"; sourceTree = "<group>"; };
+		FE4262752825A6D9009CCA73 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		FE4262762825A6D9009CCA73 /* APILogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		FE4262772825A6D9009CCA73 /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
+		FE42627D2825A73F009CCA73 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		FE42627E2825A73F009CCA73 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FE4262802825A73F009CCA73 /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		FE4262812825A73F009CCA73 /* SetRootViewControllerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRootViewControllerTransition.swift; sourceTree = "<group>"; };
+		FE4262822825A73F009CCA73 /* PlaceOnWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceOnWindow.swift; sourceTree = "<group>"; };
+		FE4262832825A73F009CCA73 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		FE4262842825A73F009CCA73 /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		FE4262892825A73F009CCA73 /* PopToBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopToBack.swift; sourceTree = "<group>"; };
+		FE42628A2825A73F009CCA73 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		FE42628B2825A73F009CCA73 /* PopToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopToViewController.swift; sourceTree = "<group>"; };
+		FE42628C2825A73F009CCA73 /* DismissableRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableRoute.swift; sourceTree = "<group>"; };
+		FE42628D2825A73F009CCA73 /* PopToRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopToRoute.swift; sourceTree = "<group>"; };
+		FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRouter.swift; sourceTree = "<group>"; };
+		FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRoute.swift; sourceTree = "<group>"; };
 		FE73479D27E714C40019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347A127E714CA0019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347F427E715A60019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,10 +90,6 @@
 		FE7347FB27E715AD0019DB4F /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Template-Bridging-Header.h"; sourceTree = "<group>"; };
 		FEBA463C27E648D0009A75F9 /* iOS-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEBA463F27E648D0009A75F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEBA464127E648D0009A75F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEBA464327E648D0009A75F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FEBA464627E648D0009A75F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEBA464927E648D0009A75F9 /* iOS_Template.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Template.xcdatamodel; sourceTree = "<group>"; };
 		FEBA464B27E648D1009A75F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEBA464E27E648D1009A75F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,9 +133,102 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FE42626B2825A6A8009CCA73 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */,
+				FE42626E2825A6A8009CCA73 /* AppDelegate.swift */,
+				FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FE4262742825A6D9009CCA73 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262752825A6D9009CCA73 /* DataProvider.swift */,
+				FE4262762825A6D9009CCA73 /* APILogger.swift */,
+				FE4262772825A6D9009CCA73 /* APIRequestInterceptor.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		FE42627B2825A73F009CCA73 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				FE42627C2825A73F009CCA73 /* Core */,
+				FE42627F2825A73F009CCA73 /* Transitions */,
+				FE4262882825A73F009CCA73 /* Router */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		FE42627C2825A73F009CCA73 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FE42627D2825A73F009CCA73 /* Animator.swift */,
+				FE42627E2825A73F009CCA73 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FE42627F2825A73F009CCA73 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262802825A73F009CCA73 /* ModalTransition.swift */,
+				FE4262812825A73F009CCA73 /* SetRootViewControllerTransition.swift */,
+				FE4262822825A73F009CCA73 /* PlaceOnWindow.swift */,
+				FE4262832825A73F009CCA73 /* Transition.swift */,
+				FE4262842825A73F009CCA73 /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		FE4262882825A73F009CCA73 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262892825A73F009CCA73 /* PopToBack.swift */,
+				FE42628A2825A73F009CCA73 /* AppRouter.swift */,
+				FE42628B2825A73F009CCA73 /* PopToViewController.swift */,
+				FE42628C2825A73F009CCA73 /* DismissableRoute.swift */,
+				FE42628D2825A73F009CCA73 /* PopToRoute.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE42629C2825A7C0009CCA73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEBA464B27E648D1009A75F9 /* Assets.xcassets */,
+				FEBA464D27E648D1009A75F9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE42629D2825A7CE009CCA73 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FE42629E2825A7D1009CCA73 /* Example */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FE42629E2825A7D1009CCA73 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */,
+				FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */,
+				FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */,
+				FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		FE73480A27E717E40019DB4F /* Configure */ = {
 			isa = PBXGroup;
 			children = (
+				FEBA464827E648D0009A75F9 /* iOS_Template.xcdatamodeld */,
+				FEBA465027E648D1009A75F9 /* Info.plist */,
 				FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */,
 			);
 			path = Configure;
@@ -126,15 +255,12 @@
 		FEBA463E27E648D0009A75F9 /* iOS-Template */ = {
 			isa = PBXGroup;
 			children = (
+				FE42629D2825A7CE009CCA73 /* Scene */,
+				FE42629C2825A7C0009CCA73 /* Resources */,
+				FE42627B2825A73F009CCA73 /* Routing */,
+				FE4262742825A6D9009CCA73 /* DataProvider */,
+				FE42626B2825A6A8009CCA73 /* AppDelegate */,
 				FE73480A27E717E40019DB4F /* Configure */,
-				FEBA463F27E648D0009A75F9 /* AppDelegate.swift */,
-				FEBA464127E648D0009A75F9 /* SceneDelegate.swift */,
-				FEBA464327E648D0009A75F9 /* ViewController.swift */,
-				FEBA464527E648D0009A75F9 /* Main.storyboard */,
-				FEBA464B27E648D1009A75F9 /* Assets.xcassets */,
-				FEBA464D27E648D1009A75F9 /* LaunchScreen.storyboard */,
-				FEBA465027E648D1009A75F9 /* Info.plist */,
-				FEBA464827E648D0009A75F9 /* iOS_Template.xcdatamodeld */,
 			);
 			path = "iOS-Template";
 			sourceTree = "<group>";
@@ -203,7 +329,6 @@
 			files = (
 				FEBA464F27E648D1009A75F9 /* LaunchScreen.storyboard in Resources */,
 				FEBA464C27E648D1009A75F9 /* Assets.xcassets in Resources */,
-				FEBA464727E648D0009A75F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +381,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEBA464427E648D0009A75F9 /* ViewController.swift in Sources */,
-				FEBA464027E648D0009A75F9 /* AppDelegate.swift in Sources */,
-				FEBA464227E648D0009A75F9 /* SceneDelegate.swift in Sources */,
+				FE4262922825A73F009CCA73 /* PlaceOnWindow.swift in Sources */,
+				FE42629B2825A73F009CCA73 /* PopToRoute.swift in Sources */,
+				FE4262792825A6D9009CCA73 /* APILogger.swift in Sources */,
+				FE42627A2825A6D9009CCA73 /* APIRequestInterceptor.swift in Sources */,
+				FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */,
+				FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */,
+				FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */,
+				FE42628F2825A73F009CCA73 /* Router.swift in Sources */,
+				FE4262932825A73F009CCA73 /* Transition.swift in Sources */,
+				FE42628E2825A73F009CCA73 /* Animator.swift in Sources */,
+				FE4262942825A73F009CCA73 /* PushTransition.swift in Sources */,
+				FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */,
+				FE4262A22825A7EA009CCA73 /* ExampleRouter.swift in Sources */,
+				FE4262992825A73F009CCA73 /* PopToViewController.swift in Sources */,
+				FE4262782825A6D9009CCA73 /* DataProvider.swift in Sources */,
+				FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */,
+				FE4262912825A73F009CCA73 /* SetRootViewControllerTransition.swift in Sources */,
+				FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */,
+				FE4262902825A73F009CCA73 /* ModalTransition.swift in Sources */,
+				FE4262982825A73F009CCA73 /* AppRouter.swift in Sources */,
+				FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */,
+				FE4262972825A73F009CCA73 /* PopToBack.swift in Sources */,
 				FEBA464A27E648D0009A75F9 /* iOS_Template.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,14 +410,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FEBA464527E648D0009A75F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEBA464627E648D0009A75F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FEBA464D27E648D1009A75F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
