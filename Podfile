@@ -26,7 +26,7 @@ target 'iOS-Template' do
 
   # Helper
   pod 'IQKeyboardManagerSwift'
-
+  pod 'MobilliumUserDefaults'
 
   # UI
   pod 'SwiftEntryKit', '2.0.0'
@@ -45,6 +45,7 @@ target 'UIComponents' do
   pod 'SwiftGen', '~> 6.4'
   
   # Helper
+  pod 'MobilliumUserDefaults'
   
   # UI
 
@@ -58,6 +59,9 @@ target 'DataProvider' do
   
   # Network
   pod 'Alamofire', '~> 5.4'
+  
+  # Helper
+  pod 'MobilliumUserDefaults'
 
 end
 
@@ -66,6 +70,9 @@ target 'Utilities' do
   project 'Utilities/Utilities.xcodeproj'
 
   # Pods for Utilities
+  
+  # Helper
+  pod 'MobilliumUserDefaults'
 
 end
 

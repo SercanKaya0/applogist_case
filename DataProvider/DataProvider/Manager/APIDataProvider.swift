@@ -55,32 +55,27 @@ public struct APIDataProvider: DataProviderProtocol {
     }
     
     public func request<T: DecodableResponseRequest>(for request: T, result: DataProviderResult<T.ResponseType>? = nil) {
-        let status = NetworkReachabilityManager()?.isReachable ?? false
-        if !status {
-            result?(.failure(.noInternetConnection))
-        } else {
-            let request = createRequest(request)
-            request.validate()
-            request.responseDecodable(of: T.ResponseType.self) { (response) in
-                switch response.result {
-                case .success(let value):
-                    result?(.success(value))
-                case .failure(let error):
-                    if error.isTimeout {
-                        result?(.failure(.timeOut))
+        let request = createRequest(request)
+        request.validate()
+        request.responseDecodable(of: T.ResponseType.self) { (response) in
+            switch response.result {
+            case .success(let value):
+                result?(.success(value))
+            case .failure(let error):
+                if error.isTimeout {
+                    result?(.failure(.timeOut))
+                } else {
+                    let decoder = JSONDecoder()
+                    if let data = response.data,
+                       let baseError = try? decoder.decode([BaseErrorResponse].self, from: data).first {
+                        result?(.failure(.baseError(baseError)))
                     } else {
-                        let decoder = JSONDecoder()
-                        if let data = response.data,
-                           let baseError = try? decoder.decode([BaseErrorResponse].self, from: data).first {
-                            result?(.failure(.baseError(baseError)))
-                        } else {
-                            result?(.failure(.baseError(error)))
-                        }
+                        result?(.failure(.baseError(error)))
                     }
                 }
             }
-        }
     }
+}
     
     public func uploadRequest<T: DecodableResponseRequest>(for request: T,
                                                            files: [MultiPartFileData], result: DataProviderResult<T.ResponseType>? = nil) {

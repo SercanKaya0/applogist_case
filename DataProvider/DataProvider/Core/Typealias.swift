@@ -8,12 +8,3 @@
 
 public typealias RequestParameters = [String: Any]
 public typealias RequestHeaders = [String: String]
-
-extension RequestParameters {
-    
-    mutating func setToken() {
-        if let user = UserCacheHelper.get() {
-            self["token"] = user.token
-        }
-    }
-}

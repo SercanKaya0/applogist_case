@@ -10,7 +10,7 @@ public struct UserCacheHelper {
     static let key = "userProfileCache"
     static let simpleDataKey = "userSimpleData"
     
-    public static func save(_ value: Auth) {
+    /*public static func save(_ value: Auth) {
          UserDefaults.standard.set(try? PropertyListEncoder().encode(value), forKey: key)
     }
     
@@ -32,9 +32,9 @@ public struct UserCacheHelper {
             userSimpleData = try? PropertyListDecoder().decode(Profile.self, from: data)
         }
         return userSimpleData
-    }
+    }*/
     
-    public static func remove() {
+    /*public static func remove() {
         UserDefaults.standard.removeObject(forKey: key)
         UserDefaults.standard.removeObject(forKey: simpleDataKey)
     }
@@ -45,5 +45,5 @@ public struct UserCacheHelper {
         } else {
             return false
         }
-    }
+    }*/
 }

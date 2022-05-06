@@ -30,6 +30,11 @@
 		FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */; };
 		FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */; };
 		FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */; };
+		FE4262B12825A87B009CCA73 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A92825A87B009CCA73 /* BaseViewModel.swift */; };
+		FE4262B22825A87B009CCA73 /* ModalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262AB2825A87B009CCA73 /* ModalNavigationController.swift */; };
+		FE4262B32825A87B009CCA73 /* CleanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262AC2825A87B009CCA73 /* CleanNavigationController.swift */; };
+		FE4262B42825A87B009CCA73 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262AD2825A87B009CCA73 /* BaseNavigationController.swift */; };
+		FE4262B62825A87B009CCA73 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262B02825A87B009CCA73 /* BaseViewController.swift */; };
 		FE7347F527E715A60019DB4F /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; };
 		FE7347F627E715A60019DB4F /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F427E715A60019DB4F /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE7347F927E715AA0019DB4F /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7347F827E715AA0019DB4F /* UIComponents.framework */; };
@@ -83,6 +88,11 @@
 		FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRoute.swift; sourceTree = "<group>"; };
+		FE4262A92825A87B009CCA73 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FE4262AB2825A87B009CCA73 /* ModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationController.swift; sourceTree = "<group>"; };
+		FE4262AC2825A87B009CCA73 /* CleanNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanNavigationController.swift; sourceTree = "<group>"; };
+		FE4262AD2825A87B009CCA73 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		FE4262B02825A87B009CCA73 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FE73479D27E714C40019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347A127E714CA0019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347F427E715A60019DB4F /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +218,7 @@
 		FE42629D2825A7CE009CCA73 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				FE4262A72825A87B009CCA73 /* Base */,
 				FE42629E2825A7D1009CCA73 /* Example */,
 			);
 			path = Scene;
@@ -222,6 +233,42 @@
 				FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		FE4262A72825A87B009CCA73 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262A82825A87B009CCA73 /* ViewModel */,
+				FE4262AA2825A87B009CCA73 /* NavigationController */,
+				FE4262AE2825A87B009CCA73 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FE4262A82825A87B009CCA73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262A92825A87B009CCA73 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE4262AA2825A87B009CCA73 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262AB2825A87B009CCA73 /* ModalNavigationController.swift */,
+				FE4262AC2825A87B009CCA73 /* CleanNavigationController.swift */,
+				FE4262AD2825A87B009CCA73 /* BaseNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		FE4262AE2825A87B009CCA73 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE4262B02825A87B009CCA73 /* BaseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		FE73480A27E717E40019DB4F /* Configure */ = {
@@ -382,10 +429,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4262922825A73F009CCA73 /* PlaceOnWindow.swift in Sources */,
+				FE4262B22825A87B009CCA73 /* ModalNavigationController.swift in Sources */,
 				FE42629B2825A73F009CCA73 /* PopToRoute.swift in Sources */,
 				FE4262792825A6D9009CCA73 /* APILogger.swift in Sources */,
 				FE42627A2825A6D9009CCA73 /* APIRequestInterceptor.swift in Sources */,
 				FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */,
+				FE4262B12825A87B009CCA73 /* BaseViewModel.swift in Sources */,
 				FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */,
 				FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */,
 				FE42628F2825A73F009CCA73 /* Router.swift in Sources */,
@@ -394,6 +443,7 @@
 				FE4262942825A73F009CCA73 /* PushTransition.swift in Sources */,
 				FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */,
 				FE4262A22825A7EA009CCA73 /* ExampleRouter.swift in Sources */,
+				FE4262B32825A87B009CCA73 /* CleanNavigationController.swift in Sources */,
 				FE4262992825A73F009CCA73 /* PopToViewController.swift in Sources */,
 				FE4262782825A6D9009CCA73 /* DataProvider.swift in Sources */,
 				FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */,
@@ -401,9 +451,11 @@
 				FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */,
 				FE4262902825A73F009CCA73 /* ModalTransition.swift in Sources */,
 				FE4262982825A73F009CCA73 /* AppRouter.swift in Sources */,
+				FE4262B42825A87B009CCA73 /* BaseNavigationController.swift in Sources */,
 				FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */,
 				FE4262972825A73F009CCA73 /* PopToBack.swift in Sources */,
 				FEBA464A27E648D0009A75F9 /* iOS_Template.xcdatamodeld in Sources */,
+				FE4262B62825A87B009CCA73 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "iOS-Template/Configure/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -527,6 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "iOS-Template/Configure/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -550,7 +604,6 @@
 				INFOPLIST_FILE = "iOS-Template/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -582,7 +635,6 @@
 				INFOPLIST_FILE = "iOS-Template/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

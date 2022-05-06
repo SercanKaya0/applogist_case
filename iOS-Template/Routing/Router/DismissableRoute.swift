@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Utilities
+
 protocol Dismissable {
     func dismiss(isAnimated: Bool, completion: VoidClosure?)
 }
