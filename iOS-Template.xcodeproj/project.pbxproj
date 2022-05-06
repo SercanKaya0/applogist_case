@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9DBD666A4402FDF552DA39CF /* Pods_iOS_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */; };
+		FE41B4CE2825ADBA00EB6DDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */; };
+		FE41B4D02825B02F00EB6DDB /* AppDelegate+SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */; };
 		FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */; };
 		FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626E2825A6A8009CCA73 /* AppDelegate.swift */; };
 		FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */; };
@@ -66,6 +68,8 @@
 		04877A26D51F1347A8C99379 /* Pods_iOS_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B568054FDB8B78B36A64A /* Pods-iOS-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3233FF4021667B45E2EF20 /* Pods-iOS-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Template.release.xcconfig"; path = "Target Support Files/Pods-iOS-Template/Pods-iOS-Template.release.xcconfig"; sourceTree = "<group>"; };
+		FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SocialLogin.swift"; sourceTree = "<group>"; };
 		FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDeleagate+Firebase.swift"; sourceTree = "<group>"; };
 		FE42626E2825A6A8009CCA73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+IQKeyboardManager.swift"; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */,
 				FE42626E2825A6A8009CCA73 /* AppDelegate.swift */,
 				FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */,
+				FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 		FE73480A27E717E40019DB4F /* Configure */ = {
 			isa = PBXGroup;
 			children = (
+				FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */,
 				FEBA464827E648D0009A75F9 /* iOS_Template.xcdatamodeld */,
 				FEBA465027E648D1009A75F9 /* Info.plist */,
 				FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */,
@@ -375,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBA464F27E648D1009A75F9 /* LaunchScreen.storyboard in Resources */,
+				FE41B4CE2825ADBA00EB6DDB /* GoogleService-Info.plist in Resources */,
 				FEBA464C27E648D1009A75F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +443,7 @@
 				FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */,
 				FE4262B12825A87B009CCA73 /* BaseViewModel.swift in Sources */,
 				FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */,
+				FE41B4D02825B02F00EB6DDB /* AppDelegate+SocialLogin.swift in Sources */,
 				FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */,
 				FE42628F2825A73F009CCA73 /* Router.swift in Sources */,
 				FE4262932825A73F009CCA73 /* Transition.swift in Sources */,

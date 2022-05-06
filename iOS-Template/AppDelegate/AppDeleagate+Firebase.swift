@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import FirebaseCore
 
 extension AppDelegate {
     
     func firebaseConfigure() {
-        //FirebaseApp.configure()
+        FirebaseApp.configure()
     }
 }
