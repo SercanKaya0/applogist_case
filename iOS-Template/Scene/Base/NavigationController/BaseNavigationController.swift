@@ -21,7 +21,7 @@ class BaseNavigationController: UINavigationController {
     }
     
     private func configureContents() {
-        let attributed: [NSAttributedString.Key: Any] = [ .foregroundColor: UIColor.white]
+        let attributed: [NSAttributedString.Key: Any] = [ .foregroundColor: UIColor.black]
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             let backButtonAppearance = UIBarButtonItemAppearance()
