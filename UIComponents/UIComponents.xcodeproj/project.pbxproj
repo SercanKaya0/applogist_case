@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E72F1B73163D45C5A7CAA1D0 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6F78B05FEFA3BCB786A95F /* Pods_UIComponents.framework */; };
+		5794728228888F3700F3C1D8 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */; };
+		5794728328888F3700F3C1D8 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726C28888F3700F3C1D8 /* Inter-Light.ttf */; };
+		5794728428888F3700F3C1D8 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */; };
+		5794728528888F3700F3C1D8 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726E28888F3700F3C1D8 /* Inter-Bold.ttf */; };
+		5794728628888F3700F3C1D8 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726F28888F3700F3C1D8 /* Inter-Regular.ttf */; };
+		5794728728888F3700F3C1D8 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794727028888F3700F3C1D8 /* Inter-ExtraBold.ttf */; };
+		5794728828888F3700F3C1D8 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794727128888F3700F3C1D8 /* Inter-ExtraLight.ttf */; };
+		5794728928888F3700F3C1D8 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794727228888F3700F3C1D8 /* Inter-Black.ttf */; };
+		5794728A28888F3700F3C1D8 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794727328888F3700F3C1D8 /* Inter-SemiBold.ttf */; };
+		5794728E28888F3700F3C1D8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5794727828888F3700F3C1D8 /* Colors.xcassets */; };
+		5794729028888F3700F3C1D8 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5794727A28888F3700F3C1D8 /* Icons.xcassets */; };
+		5794729228888F3700F3C1D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5794727C28888F3700F3C1D8 /* Images.xcassets */; };
+		5794729728888FE300F3C1D8 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5794729628888FE300F3C1D8 /* Utilities.framework */; };
+		5794729A28888FF500F3C1D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5794729C28888FF500F3C1D8 /* Localizable.strings */; };
+		579472AB28889E4800F3C1D8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 579472AA28889E4800F3C1D8 /* swiftgen.yml */; };
+		BFD5292D9C247C84C4F16C2D /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579472AE2889D67200F3C1D8 /* Pods_UIComponents.framework */; };
 		FE7347C627E715580019DB4F /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7347C527E715580019DB4F /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE73480327E716130019DB4F /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */; };
 		FE73480427E716130019DB4F /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73480027E716130019DB4F /* UICollectionView+Extensions.swift */; };
@@ -18,6 +33,25 @@
 
 /* Begin PBXFileReference section */
 		017205D27D9379550173DA92 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
+		5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		5794726C28888F3700F3C1D8 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		5794726E28888F3700F3C1D8 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		5794726F28888F3700F3C1D8 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		5794727028888F3700F3C1D8 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5794727128888F3700F3C1D8 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5794727228888F3700F3C1D8 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		5794727328888F3700F3C1D8 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		5794727828888F3700F3C1D8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5794727A28888F3700F3C1D8 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		5794727C28888F3700F3C1D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5794729628888FE300F3C1D8 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5794729B28888FF500F3C1D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5794729D28888FFD00F3C1D8 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5794729E2888921E00F3C1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		579472AA28889E4800F3C1D8 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		579472AD2889D44400F3C1D8 /* libpoll.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpoll.tbd; path = usr/lib/libpoll.tbd; sourceTree = SDKROOT; };
+		579472AE2889D67200F3C1D8 /* Pods_UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFBDCF860852E97C663915 /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		FC6F78B05FEFA3BCB786A95F /* Pods_UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347C227E715580019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72F1B73163D45C5A7CAA1D0 /* Pods_UIComponents.framework in Frameworks */,
+				5794729728888FE300F3C1D8 /* Utilities.framework in Frameworks */,
+				BFD5292D9C247C84C4F16C2D /* Pods_UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +86,64 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		5794725F28888F3700F3C1D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5794726028888F3700F3C1D8 /* Strings */,
+				5794726828888F3700F3C1D8 /* Fonts */,
+				5794727528888F3700F3C1D8 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5794726028888F3700F3C1D8 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				5794729C28888FF500F3C1D8 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		5794726828888F3700F3C1D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5794726A28888F3700F3C1D8 /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5794726A28888F3700F3C1D8 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */,
+				5794726C28888F3700F3C1D8 /* Inter-Light.ttf */,
+				5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */,
+				5794726E28888F3700F3C1D8 /* Inter-Bold.ttf */,
+				5794726F28888F3700F3C1D8 /* Inter-Regular.ttf */,
+				5794727028888F3700F3C1D8 /* Inter-ExtraBold.ttf */,
+				5794727128888F3700F3C1D8 /* Inter-ExtraLight.ttf */,
+				5794727228888F3700F3C1D8 /* Inter-Black.ttf */,
+				5794727328888F3700F3C1D8 /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		5794727528888F3700F3C1D8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5794727828888F3700F3C1D8 /* Colors.xcassets */,
+				5794727A28888F3700F3C1D8 /* Icons.xcassets */,
+				5794727C28888F3700F3C1D8 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		E735DDAA7FA619F08D55B1D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				579472AE2889D67200F3C1D8 /* Pods_UIComponents.framework */,
+				579472AD2889D44400F3C1D8 /* libpoll.tbd */,
+				5794729628888FE300F3C1D8 /* Utilities.framework */,
 				FC6F78B05FEFA3BCB786A95F /* Pods_UIComponents.framework */,
 			);
 			name = Frameworks;
@@ -62,6 +152,7 @@
 		FE7347B827E715580019DB4F = {
 			isa = PBXGroup;
 			children = (
+				579472AA28889E4800F3C1D8 /* swiftgen.yml */,
 				FE7347C427E715580019DB4F /* UIComponents */,
 				FE7347C327E715580019DB4F /* Products */,
 				512FE9E63EFA4C8618A45625 /* Pods */,
@@ -80,6 +171,8 @@
 		FE7347C427E715580019DB4F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5794729E2888921E00F3C1D8 /* Info.plist */,
+				5794725F28888F3700F3C1D8 /* Resources */,
 				FE73480727E7164A0019DB4F /* Protocols */,
 				FE7347FE27E716040019DB4F /* Extensions */,
 				FE7347C527E715580019DB4F /* UIComponents.h */,
@@ -129,6 +222,7 @@
 				FE7347BE27E715580019DB4F /* Sources */,
 				FE7347BF27E715580019DB4F /* Frameworks */,
 				FE7347C027E715580019DB4F /* Resources */,
+				5794729328888FA700F3C1D8 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -161,6 +255,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = FE7347B827E715580019DB4F;
 			productRefGroup = FE7347C327E715580019DB4F /* Products */;
@@ -177,12 +272,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5794728A28888F3700F3C1D8 /* Inter-SemiBold.ttf in Resources */,
+				5794728328888F3700F3C1D8 /* Inter-Light.ttf in Resources */,
+				5794729028888F3700F3C1D8 /* Icons.xcassets in Resources */,
+				5794729A28888FF500F3C1D8 /* Localizable.strings in Resources */,
+				5794728E28888F3700F3C1D8 /* Colors.xcassets in Resources */,
+				579472AB28889E4800F3C1D8 /* swiftgen.yml in Resources */,
+				5794728828888F3700F3C1D8 /* Inter-ExtraLight.ttf in Resources */,
+				5794728228888F3700F3C1D8 /* Inter-Medium.ttf in Resources */,
+				5794729228888F3700F3C1D8 /* Images.xcassets in Resources */,
+				5794728728888F3700F3C1D8 /* Inter-ExtraBold.ttf in Resources */,
+				5794728428888F3700F3C1D8 /* Inter-Thin.ttf in Resources */,
+				5794728528888F3700F3C1D8 /* Inter-Bold.ttf in Resources */,
+				5794728928888F3700F3C1D8 /* Inter-Black.ttf in Resources */,
+				5794728628888F3700F3C1D8 /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5794729328888FA700F3C1D8 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		AC7F0AA9EEED67196759D989 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,11 +349,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		5794729C28888FF500F3C1D8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5794729B28888FF500F3C1D8 /* en */,
+				5794729D28888FFD00F3C1D8 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FE7347C727E715580019DB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -290,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -348,13 +489,16 @@
 			baseConfigurationReference = 63FFBDCF860852E97C663915 /* Pods-UIComponents.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDV42QJYTX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIComponents/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -380,13 +524,16 @@
 			baseConfigurationReference = 017205D27D9379550173DA92 /* Pods-UIComponents.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDV42QJYTX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIComponents/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
