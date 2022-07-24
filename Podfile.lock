@@ -519,7 +519,7 @@ DEPENDENCIES:
   - MobilliumUserDefaults
   - MobilliumUserDefaults (~> 2.0)
   - SwiftEntryKit (= 2.0.0)
-  - SwiftGen (~> 6.4)
+  - SwiftGen (~> 6.5.1)
   - SwiftLint (~> 0.43)
   - TinyConstraints (~> 4.0)
 
@@ -607,6 +607,6 @@ SPEC CHECKSUMS:
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 3017961d22f30e949081d2a2953138b12926b3e3
+PODFILE CHECKSUM: 764fc8d9a902823f530435f61db93226dd43e547
 
 COCOAPODS: 1.11.2

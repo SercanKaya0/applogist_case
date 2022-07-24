@@ -54,7 +54,7 @@ target 'UIComponents' do
   shared_pods
   
   # Generater
-  pod 'SwiftGen', '~> 6.4'
+  pod 'SwiftGen', '~> 6.5.1'
   
   # Helper
   pod 'MobilliumUserDefaults'

@@ -15,9 +15,7 @@ public enum L10n {
 
   public enum Deneme {
     /// dasd
-    public static var dasdasd: String { return L10n.tr("Localizable", "Deneme.dasdasd") }
-    /// dasd
-    public static var title: String { return L10n.tr("Localizable", "Deneme.title") }
+    public static var oldu: String { return L10n.tr("Localizable", "Deneme.oldu") }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
