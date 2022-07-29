@@ -2,7 +2,7 @@
 //  MultiPartData.swift
 //  DataProvider
 //
-//  Created by Ercan Garip on 24.12.2021.
+//  Created by Sercan Kaya on 24.12.2021.
 //
 
 import Foundation

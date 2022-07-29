@@ -2,7 +2,7 @@
 //  Clousers.swift
 //  Utilities
 //
-//  Created by Ercan Garip on 25.11.2021.
+//  Created by Sercan Kaya on 25.11.2021.
 //
 /**
  Define global closures

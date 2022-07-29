@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NYT
 //
-//  Created by Ercan Garip on 21.10.2021.
+//  Created by Sercan Kaya on 21.10.2021.
 //
 
 import UIKit

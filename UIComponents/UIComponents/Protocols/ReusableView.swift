@@ -2,7 +2,7 @@
 //  ReusableView.swift
 //  UIComponents
 //
-//  Created by Ercan Garip on 15.11.2021.
+//  Created by Sercan Kaya on 15.11.2021.
 //
 
 import UIKit

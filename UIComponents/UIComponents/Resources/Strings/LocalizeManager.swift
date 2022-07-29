@@ -2,7 +2,7 @@
 //  LocalizeManager.swift
 //  UIComponents
 //
-//  Created by Ercan Garip on 13.06.2022.
+//  Created by Sercan Kaya on 13.06.2022.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  AFError+Extensions.swift
 //  DataProvider
 //
-//  Created by Ercan Garip on 5.02.2022.
+//  Created by Sercan Kaya on 5.02.2022.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  UIView+Extensions.swift
 //  UIComponents
 //
-//  Created by Ercan Garip on 10.12.2021.
+//  Created by Sercan Kaya on 10.12.2021.
 //
 
 import UIKit

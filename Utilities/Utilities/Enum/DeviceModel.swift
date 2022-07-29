@@ -2,7 +2,7 @@
 //  DeviceModel.swift
 //  Utilities
 //
-//  Created by Ercan Garip on 18.04.2022.
+//  Created by Sercan Kaya on 18.04.2022.
 //
 
 import Foundation

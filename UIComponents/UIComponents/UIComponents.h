@@ -2,7 +2,7 @@
 //  UIComponents.h
 //  UIComponents
 //
-//  Created by Ercan Garip on 20.03.2022.
+//  Created by Sercan Kaya on 20.03.2022.
 //
 
 #import <UIKit/UIKit.h>

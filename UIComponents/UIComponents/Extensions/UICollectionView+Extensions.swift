@@ -2,7 +2,7 @@
 //  UICollectionView+Extensions.swift
 //  UIComponents
 //
-//  Created by Ercan Garip on 30.11.2021.
+//  Created by Sercan Kaya on 30.11.2021.
 //
 
 import UIKit

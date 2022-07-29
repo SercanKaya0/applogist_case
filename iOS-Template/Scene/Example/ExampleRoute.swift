@@ -2,7 +2,7 @@
 //  ExampleRoute.swift
 //  iOS-Template
 //
-//  Created by Ercan Garip on 6.05.2022.
+//  Created by Sercan Kaya on 6.05.2022.
 //
 
 protocol ExampleRoute {

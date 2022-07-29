@@ -2,7 +2,7 @@
 //  String+Extensions.swift
 //  Utilities
 //
-//  Created by Ercan Garip on 8.04.2022.
+//  Created by Sercan Kaya on 8.04.2022.
 //
 
 import Foundation

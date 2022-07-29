@@ -2,7 +2,7 @@
 //  Bundle+Extensions.swift
 //  Utilities
 //
-//  Created by Ercan Garip on 15.04.2022.
+//  Created by Sercan Kaya on 15.04.2022.
 //
 
 import Foundation

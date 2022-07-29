@@ -2,7 +2,7 @@
 //  UITableView+Extensions.swift
 //  UIComponents
 //
-//  Created by Ercan Garip on 5.01.2022.
+//  Created by Sercan Kaya on 5.01.2022.
 //
 
 import UIKit

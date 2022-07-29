@@ -2,7 +2,7 @@
 //  PopToBack.swift
 //  NYT
 //
-//  Created by Ercan Garip on 30.03.2022.
+//  Created by Sercan Kaya on 30.03.2022.
 //
 
 import Foundation

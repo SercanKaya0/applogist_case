@@ -2,7 +2,7 @@
 //  CleanNavigationController.swift
 //  NYT
 //
-//  Created by Ercan Garip on 14.12.2021.
+//  Created by Sercan Kaya on 14.12.2021.
 //
 
 import UIKit

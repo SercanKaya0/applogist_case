@@ -2,7 +2,7 @@
 //  AppDelegate+IQKeyboardManager.swift
 //  NYT
 //
-//  Created by Ercan Garip on 23.12.2021.
+//  Created by Sercan Kaya on 23.12.2021.
 //
 
 import IQKeyboardManagerSwift

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FEBA463B27E648D0009A75F9"
-               BuildableName = "iOS-Template.app"
-               BlueprintName = "iOS-Template"
-               ReferencedContainer = "container:iOS-Template.xcodeproj">
+               BuildableName = "applogist_case.app"
+               BlueprintName = "applogist_case"
+               ReferencedContainer = "container:applogist_case.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,7 +34,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -46,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FEBA463B27E648D0009A75F9"
-            BuildableName = "iOS-Template.app"
-            BlueprintName = "iOS-Template"
-            ReferencedContainer = "container:iOS-Template.xcodeproj">
+            BuildableName = "applogist_case.app"
+            BlueprintName = "applogist_case"
+            ReferencedContainer = "container:applogist_case.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FEBA463B27E648D0009A75F9"
-            BuildableName = "iOS-Template.app"
-            BlueprintName = "iOS-Template"
-            ReferencedContainer = "container:iOS-Template.xcodeproj">
+            BuildableName = "applogist_case.app"
+            BlueprintName = "applogist_case"
+            ReferencedContainer = "container:applogist_case.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

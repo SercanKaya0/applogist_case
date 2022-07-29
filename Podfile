@@ -11,13 +11,13 @@ def shared_pods
   pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher', :branch => 'version6-xcode13'
 end
 
-workspace 'iOS-Template'
+workspace 'applogist_case'
 
-target 'iOS-Template' do
+target 'applogist_case' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for iOS-Template
+  # Pods for applogist_case
   pod 'Alamofire', '~> 5.4'
   shared_pods
 

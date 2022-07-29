@@ -2,7 +2,7 @@
 //  BaseNavigationController.swift
 //  NYT
 //
-//  Created by Ercan Garip on 7.12.2021.
+//  Created by Sercan Kaya on 7.12.2021.
 //
 
 import UIKit

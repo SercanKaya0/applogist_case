@@ -2,7 +2,7 @@
 //  SetRootViewControllerTransition.swift
 //  NYT
 //
-//  Created by Ercan Garip on 9.04.2022.
+//  Created by Sercan Kaya on 9.04.2022.
 //
 
 import UIKit

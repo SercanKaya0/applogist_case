@@ -2,7 +2,7 @@
 //  NetworkError.swift
 //  DataProvider
 //
-//  Created by Ercan Garip on 3.02.2022.
+//  Created by Sercan Kaya on 3.02.2022.
 //
 
 import Foundation
