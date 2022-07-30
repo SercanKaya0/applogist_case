@@ -13,9 +13,20 @@ public enum L10n {
   /// Update bundle if you need to change app language
   public static var bundle: Bundle?
 
-  public enum Deneme {
-    /// dasd
-    public static var oldu: String { return L10n.tr("Localizable", "Deneme.oldu") }
+  public enum CheckOutView {
+    /// Kapat
+    public static var closeButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.closeButtonTitle") }
+    /// Sil
+    public static var deleteButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.deleteButtonTitle") }
+    /// Sepet
+    public static var navigationTitle: String { return L10n.tr("Localizable", "CheckOutView.navigationTitle") }
+    /// Toplam
+    public static var priceLabelTitle: String { return L10n.tr("Localizable", "CheckOutView.priceLabelTitle") }
+  }
+
+  public enum HomeView {
+    /// Mini Bakkal
+    public static var navigationTitle: String { return L10n.tr("Localizable", "HomeView.navigationTitle") }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

@@ -6,5 +6,11 @@
   
 */
 
-// MARK: - Deneme
-"Deneme.oldu"  = "dasd";
+// MARK: - HomeView
+"HomeView.navigationTitle"  = "Mini Bakkal";
+
+// MARK: CheckOutView
+"CheckOutView.navigationTitle"  = "Sepet";
+"CheckOutView.deleteButtonTitle"  = "Sil";
+"CheckOutView.closeButtonTitle"  = "Kapat";
+"CheckOutView.priceLabelTitle"  = "Toplam";
