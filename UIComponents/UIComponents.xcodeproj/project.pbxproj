@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5702F6CD289377DF00839667 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6CC289377DF00839667 /* StepperView.swift */; };
+		5702F6D028937DCD00839667 /* StackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6CF28937DCD00839667 /* StackView+Extensions.swift */; };
+		5702F6D9289488EB00839667 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6D8289488EB00839667 /* BadgeView.swift */; };
+		5702F6E42895FB6800839667 /* BigAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6E32895FB6800839667 /* BigAreaButton.swift */; };
 		5794728228888F3700F3C1D8 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */; };
 		5794728328888F3700F3C1D8 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726C28888F3700F3C1D8 /* Inter-Light.ttf */; };
 		5794728428888F3700F3C1D8 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */; };
@@ -29,6 +33,8 @@
 		579472C3288DD6A600F3C1D8 /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579472BF288DD6A600F3C1D8 /* UIImage+Images.swift */; };
 		579472C5288DD6AC00F3C1D8 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579472C4288DD6AB00F3C1D8 /* StringConstants.swift */; };
 		579472C7288DD76600F3C1D8 /* LocalizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579472C6288DD76600F3C1D8 /* LocalizeManager.swift */; };
+		57E8DF2F2893662C00EF7490 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF2D2893662C00EF7490 /* ProductCell.swift */; };
+		57E8DF302893662C00EF7490 /* ProductCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF2E2893662C00EF7490 /* ProductCellModel.swift */; };
 		9199C0BCCC636056A87CAC9C /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579472B6288DD1A800F3C1D8 /* Pods_UIComponents.framework */; };
 		FE7347C627E715580019DB4F /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7347C527E715580019DB4F /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE73480327E716130019DB4F /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */; };
@@ -40,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		017205D27D9379550173DA92 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
+		5702F6CC289377DF00839667 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		5702F6CF28937DCD00839667 /* StackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StackView+Extensions.swift"; sourceTree = "<group>"; };
+		5702F6D8289488EB00839667 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		5702F6E32895FB6800839667 /* BigAreaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigAreaButton.swift; sourceTree = "<group>"; };
 		5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		5794726C28888F3700F3C1D8 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		579472BF288DD6A600F3C1D8 /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		579472C4288DD6AB00F3C1D8 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		579472C6288DD76600F3C1D8 /* LocalizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizeManager.swift; sourceTree = "<group>"; };
+		57E8DF2D2893662C00EF7490 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		57E8DF2E2893662C00EF7490 /* ProductCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellModel.swift; sourceTree = "<group>"; };
 		63FFBDCF860852E97C663915 /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		FC6F78B05FEFA3BCB786A95F /* Pods_UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347C227E715580019DB4F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +113,39 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		5702F6CA289377C800839667 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6D7289488DC00839667 /* BadgeView */,
+				5702F6CB289377CF00839667 /* StepperView */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		5702F6CB289377CF00839667 /* StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6CC289377DF00839667 /* StepperView.swift */,
+			);
+			path = StepperView;
+			sourceTree = "<group>";
+		};
+		5702F6CE28937DBB00839667 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6E32895FB6800839667 /* BigAreaButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		5702F6D7289488DC00839667 /* BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6D8289488EB00839667 /* BadgeView.swift */,
+			);
+			path = BadgeView;
 			sourceTree = "<group>";
 		};
 		5794725F28888F3700F3C1D8 /* Resources */ = {
@@ -162,6 +207,31 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		57E8DF26289365D500EF7490 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57E8DF27289365DB00EF7490 /* CollectionViews */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		57E8DF27289365DB00EF7490 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				57E8DF28289365E200EF7490 /* ProductCell */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		57E8DF28289365E200EF7490 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				57E8DF2D2893662C00EF7490 /* ProductCell.swift */,
+				57E8DF2E2893662C00EF7490 /* ProductCellModel.swift */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
 		E735DDAA7FA619F08D55B1D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +268,9 @@
 		FE7347C427E715580019DB4F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5702F6CE28937DBB00839667 /* UIButton */,
+				5702F6CA289377C800839667 /* UIView */,
+				57E8DF26289365D500EF7490 /* Cells */,
 				5794729E2888921E00F3C1D8 /* Info.plist */,
 				5794725F28888F3700F3C1D8 /* Resources */,
 				FE73480727E7164A0019DB4F /* Protocols */,
@@ -210,6 +283,7 @@
 		FE7347FE27E716040019DB4F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5702F6CF28937DCD00839667 /* StackView+Extensions.swift */,
 				FE7347FF27E716130019DB4F /* NSMutableAttributedString+Extension.swift */,
 				FE73480027E716130019DB4F /* UICollectionView+Extensions.swift */,
 				FE73480227E716130019DB4F /* UITableView+Extensions.swift */,
@@ -367,13 +441,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE73480527E716130019DB4F /* UIView+Extensions.swift in Sources */,
+				5702F6D028937DCD00839667 /* StackView+Extensions.swift in Sources */,
+				5702F6CD289377DF00839667 /* StepperView.swift in Sources */,
+				5702F6D9289488EB00839667 /* BadgeView.swift in Sources */,
 				579472C5288DD6AC00F3C1D8 /* StringConstants.swift in Sources */,
 				579472C3288DD6A600F3C1D8 /* UIImage+Images.swift in Sources */,
 				FE73480927E7164A0019DB4F /* ReusableView.swift in Sources */,
+				57E8DF2F2893662C00EF7490 /* ProductCell.swift in Sources */,
 				FE73480427E716130019DB4F /* UICollectionView+Extensions.swift in Sources */,
 				579472C0288DD6A600F3C1D8 /* UIColor+Colors.swift in Sources */,
 				FE73480327E716130019DB4F /* NSMutableAttributedString+Extension.swift in Sources */,
+				5702F6E42895FB6800839667 /* BigAreaButton.swift in Sources */,
 				579472BB288DD69600F3C1D8 /* Fonts.swift in Sources */,
+				57E8DF302893662C00EF7490 /* ProductCellModel.swift in Sources */,
 				579472C1288DD6A600F3C1D8 /* UIImage+Icons.swift in Sources */,
 				FE73480627E716130019DB4F /* UITableView+Extensions.swift in Sources */,
 				579472C7288DD76600F3C1D8 /* LocalizeManager.swift in Sources */,
