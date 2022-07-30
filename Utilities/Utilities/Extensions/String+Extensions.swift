@@ -9,7 +9,7 @@ import Foundation
 
 public extension String {
     
-    var nytUrl: URL? {
+    var caseURL: URL? {
         let stringUrl = self.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
         if let stringUrl = stringUrl {
             return URL(string: stringUrl)

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5702F6DE2895F78900839667 /* CheckOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6DB2895F78900839667 /* CheckOutRouter.swift */; };
+		5702F6DF2895F78900839667 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6DC2895F78900839667 /* CheckOutViewController.swift */; };
+		5702F6E02895F78900839667 /* CheckOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6DD2895F78900839667 /* CheckOutViewModel.swift */; };
+		5702F6E22895F7AC00839667 /* CheckOutRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6E12895F7AC00839667 /* CheckOutRoute.swift */; };
+		57E8DF212893637600EF7490 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF1E2893637600EF7490 /* HomeRouter.swift */; };
+		57E8DF222893637600EF7490 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF1F2893637600EF7490 /* HomeViewController.swift */; };
+		57E8DF232893637600EF7490 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF202893637600EF7490 /* HomeViewModel.swift */; };
+		57E8DF25289363A600EF7490 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8DF24289363A600EF7490 /* HomeRoute.swift */; };
 		D95248EAEBA687E4703AAB63 /* Pods_applogist_case.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B84764E7F944C8375056F /* Pods_applogist_case.framework */; };
-		FE41B4CE2825ADBA00EB6DDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */; };
-		FE41B4D02825B02F00EB6DDB /* AppDelegate+SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */; };
-		FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */; };
 		FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626E2825A6A8009CCA73 /* AppDelegate.swift */; };
-		FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */; };
 		FE4262782825A6D9009CCA73 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262752825A6D9009CCA73 /* DataProvider.swift */; };
 		FE4262792825A6D9009CCA73 /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262762825A6D9009CCA73 /* APILogger.swift */; };
 		FE42627A2825A6D9009CCA73 /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262772825A6D9009CCA73 /* APIRequestInterceptor.swift */; };
@@ -28,10 +32,6 @@
 		FE4262992825A73F009CCA73 /* PopToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628B2825A73F009CCA73 /* PopToViewController.swift */; };
 		FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628C2825A73F009CCA73 /* DismissableRoute.swift */; };
 		FE42629B2825A73F009CCA73 /* PopToRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42628D2825A73F009CCA73 /* PopToRoute.swift */; };
-		FE4262A22825A7EA009CCA73 /* ExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */; };
-		FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */; };
-		FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */; };
-		FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */; };
 		FE4262B12825A87B009CCA73 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262A92825A87B009CCA73 /* BaseViewModel.swift */; };
 		FE4262B22825A87B009CCA73 /* ModalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262AB2825A87B009CCA73 /* ModalNavigationController.swift */; };
 		FE4262B32825A87B009CCA73 /* CleanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262AC2825A87B009CCA73 /* CleanNavigationController.swift */; };
@@ -67,12 +67,16 @@
 /* Begin PBXFileReference section */
 		3318CE87EFFD8BB596B86E1A /* Pods-applogist_case.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-applogist_case.release.xcconfig"; path = "Target Support Files/Pods-applogist_case/Pods-applogist_case.release.xcconfig"; sourceTree = "<group>"; };
 		3BF5C5A695D8DE7D625CC7F9 /* Pods-applogist_case.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-applogist_case.debug.xcconfig"; path = "Target Support Files/Pods-applogist_case/Pods-applogist_case.debug.xcconfig"; sourceTree = "<group>"; };
+		5702F6DB2895F78900839667 /* CheckOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutRouter.swift; sourceTree = "<group>"; };
+		5702F6DC2895F78900839667 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		5702F6DD2895F78900839667 /* CheckOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewModel.swift; sourceTree = "<group>"; };
+		5702F6E12895F7AC00839667 /* CheckOutRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutRoute.swift; sourceTree = "<group>"; };
+		57E8DF1E2893637600EF7490 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		57E8DF1F2893637600EF7490 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		57E8DF202893637600EF7490 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		57E8DF24289363A600EF7490 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 		CA8B84764E7F944C8375056F /* Pods_applogist_case.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_applogist_case.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SocialLogin.swift"; sourceTree = "<group>"; };
-		FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDeleagate+Firebase.swift"; sourceTree = "<group>"; };
 		FE42626E2825A6A8009CCA73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+IQKeyboardManager.swift"; sourceTree = "<group>"; };
 		FE4262752825A6D9009CCA73 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		FE4262762825A6D9009CCA73 /* APILogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 		FE4262772825A6D9009CCA73 /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
@@ -88,10 +92,6 @@
 		FE42628B2825A73F009CCA73 /* PopToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopToViewController.swift; sourceTree = "<group>"; };
 		FE42628C2825A73F009CCA73 /* DismissableRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableRoute.swift; sourceTree = "<group>"; };
 		FE42628D2825A73F009CCA73 /* PopToRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopToRoute.swift; sourceTree = "<group>"; };
-		FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRouter.swift; sourceTree = "<group>"; };
-		FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
-		FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
-		FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRoute.swift; sourceTree = "<group>"; };
 		FE4262A92825A87B009CCA73 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FE4262AB2825A87B009CCA73 /* ModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationController.swift; sourceTree = "<group>"; };
 		FE4262AC2825A87B009CCA73 /* CleanNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanNavigationController.swift; sourceTree = "<group>"; };
@@ -125,6 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5702F6DA2895F77100839667 /* CheckOutView */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6DB2895F78900839667 /* CheckOutRouter.swift */,
+				5702F6DC2895F78900839667 /* CheckOutViewController.swift */,
+				5702F6DD2895F78900839667 /* CheckOutViewModel.swift */,
+				5702F6E12895F7AC00839667 /* CheckOutRoute.swift */,
+			);
+			path = CheckOutView;
+			sourceTree = "<group>";
+		};
+		57E8DF1D2893636400EF7490 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				57E8DF1E2893637600EF7490 /* HomeRouter.swift */,
+				57E8DF1F2893637600EF7490 /* HomeViewController.swift */,
+				57E8DF202893637600EF7490 /* HomeViewModel.swift */,
+				57E8DF24289363A600EF7490 /* HomeRoute.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		61CCB6795EDA5FF348F38BD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,10 +172,7 @@
 		FE42626B2825A6A8009CCA73 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				FE42626D2825A6A8009CCA73 /* AppDeleagate+Firebase.swift */,
 				FE42626E2825A6A8009CCA73 /* AppDelegate.swift */,
-				FE42626F2825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift */,
-				FE41B4CF2825B02F00EB6DDB /* AppDelegate+SocialLogin.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -223,21 +242,11 @@
 		FE42629D2825A7CE009CCA73 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				5702F6DA2895F77100839667 /* CheckOutView */,
+				57E8DF1D2893636400EF7490 /* Home */,
 				FE4262A72825A87B009CCA73 /* Base */,
-				FE42629E2825A7D1009CCA73 /* Example */,
 			);
 			path = Scene;
-			sourceTree = "<group>";
-		};
-		FE42629E2825A7D1009CCA73 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				FE42629F2825A7EA009CCA73 /* ExampleRouter.swift */,
-				FE4262A02825A7EA009CCA73 /* ExampleViewController.swift */,
-				FE4262A12825A7EA009CCA73 /* ExampleViewModel.swift */,
-				FE4262A52825A7F6009CCA73 /* ExampleRoute.swift */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		FE4262A72825A87B009CCA73 /* Base */ = {
@@ -279,7 +288,6 @@
 		FE73480A27E717E40019DB4F /* Configure */ = {
 			isa = PBXGroup;
 			children = (
-				FE41B4CD2825ADBA00EB6DDB /* GoogleService-Info.plist */,
 				FEBA464827E648D0009A75F9 /* iOS_Template.xcdatamodeld */,
 				FEBA465027E648D1009A75F9 /* Info.plist */,
 				FE73480C27E7182A0019DB4F /* iOS-Template-Bridging-Header.h */,
@@ -290,7 +298,7 @@
 		FEBA463327E648D0009A75F9 = {
 			isa = PBXGroup;
 			children = (
-				FEBA463E27E648D0009A75F9 /* iOS-Template */,
+				FEBA463E27E648D0009A75F9 /* applogist_case */,
 				FEBA463D27E648D0009A75F9 /* Products */,
 				F2ECFF5F2502586978FE9DC5 /* Pods */,
 				61CCB6795EDA5FF348F38BD1 /* Frameworks */,
@@ -305,7 +313,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FEBA463E27E648D0009A75F9 /* iOS-Template */ = {
+		FEBA463E27E648D0009A75F9 /* applogist_case */ = {
 			isa = PBXGroup;
 			children = (
 				FE42629D2825A7CE009CCA73 /* Scene */,
@@ -315,7 +323,7 @@
 				FE42626B2825A6A8009CCA73 /* AppDelegate */,
 				FE73480A27E717E40019DB4F /* Configure */,
 			);
-			path = "iOS-Template";
+			path = applogist_case;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,7 +389,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBA464F27E648D1009A75F9 /* LaunchScreen.storyboard in Resources */,
-				FE41B4CE2825ADBA00EB6DDB /* GoogleService-Info.plist in Resources */,
 				FEBA464C27E648D1009A75F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,33 +444,34 @@
 			files = (
 				FE4262922825A73F009CCA73 /* PlaceOnWindow.swift in Sources */,
 				FE4262B22825A87B009CCA73 /* ModalNavigationController.swift in Sources */,
+				57E8DF222893637600EF7490 /* HomeViewController.swift in Sources */,
+				57E8DF232893637600EF7490 /* HomeViewModel.swift in Sources */,
 				FE42629B2825A73F009CCA73 /* PopToRoute.swift in Sources */,
 				FE4262792825A6D9009CCA73 /* APILogger.swift in Sources */,
+				5702F6DE2895F78900839667 /* CheckOutRouter.swift in Sources */,
 				FE42627A2825A6D9009CCA73 /* APIRequestInterceptor.swift in Sources */,
 				FE4262722825A6A8009CCA73 /* AppDelegate.swift in Sources */,
 				FE4262B12825A87B009CCA73 /* BaseViewModel.swift in Sources */,
 				FE42629A2825A73F009CCA73 /* DismissableRoute.swift in Sources */,
-				FE41B4D02825B02F00EB6DDB /* AppDelegate+SocialLogin.swift in Sources */,
-				FE4262732825A6A8009CCA73 /* AppDelegate+IQKeyboardManager.swift in Sources */,
 				FE42628F2825A73F009CCA73 /* Router.swift in Sources */,
 				FE4262932825A73F009CCA73 /* Transition.swift in Sources */,
 				FE42628E2825A73F009CCA73 /* Animator.swift in Sources */,
 				FE4262942825A73F009CCA73 /* PushTransition.swift in Sources */,
-				FE4262A32825A7EA009CCA73 /* ExampleViewController.swift in Sources */,
-				FE4262A22825A7EA009CCA73 /* ExampleRouter.swift in Sources */,
 				FE4262B32825A87B009CCA73 /* CleanNavigationController.swift in Sources */,
 				FE4262992825A73F009CCA73 /* PopToViewController.swift in Sources */,
 				FE4262782825A6D9009CCA73 /* DataProvider.swift in Sources */,
-				FE4262712825A6A8009CCA73 /* AppDeleagate+Firebase.swift in Sources */,
+				5702F6E02895F78900839667 /* CheckOutViewModel.swift in Sources */,
+				57E8DF212893637600EF7490 /* HomeRouter.swift in Sources */,
 				FE4262912825A73F009CCA73 /* SetRootViewControllerTransition.swift in Sources */,
-				FE4262A62825A7F6009CCA73 /* ExampleRoute.swift in Sources */,
 				FE4262902825A73F009CCA73 /* ModalTransition.swift in Sources */,
 				FE4262982825A73F009CCA73 /* AppRouter.swift in Sources */,
+				5702F6E22895F7AC00839667 /* CheckOutRoute.swift in Sources */,
+				57E8DF25289363A600EF7490 /* HomeRoute.swift in Sources */,
 				FE4262B42825A87B009CCA73 /* BaseNavigationController.swift in Sources */,
-				FE4262A42825A7EA009CCA73 /* ExampleViewModel.swift in Sources */,
 				FE4262972825A73F009CCA73 /* PopToBack.swift in Sources */,
 				FEBA464A27E648D0009A75F9 /* iOS_Template.xcdatamodeld in Sources */,
 				FE4262B62825A87B009CCA73 /* BaseViewController.swift in Sources */,
+				5702F6DF2895F78900839667 /* CheckOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "iOS-Template/Configure/info.plist";
+				INFOPLIST_FILE = applogist_case/Configure/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -588,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "iOS-Template/Configure/info.plist";
+				INFOPLIST_FILE = applogist_case/Configure/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -609,7 +617,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Template/Info.plist";
+				INFOPLIST_FILE = applogist_case/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = applogist_case;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -624,7 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "testapp.iOS-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Template/Configure/iOS-Template-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "applogist_case/Configure/iOS-Template-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,7 +649,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Template/Info.plist";
+				INFOPLIST_FILE = applogist_case/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = applogist_case;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -656,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "testapp.iOS-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Template/Configure/iOS-Template-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "applogist_case/Configure/iOS-Template-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

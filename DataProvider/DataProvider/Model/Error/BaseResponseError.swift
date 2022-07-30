@@ -10,7 +10,7 @@ import Foundation
 public enum BaseErrorType: String {
     case registerFailed = "register_failed"
     case registerMissingParams = "register_failed_required_params_missing"
-    case nytInvalidToken = "nyt_invalid_token"
+    case caseInvalidToken = "case_invalid_token"
     case unknown
 }
 
