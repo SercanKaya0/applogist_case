@@ -10,8 +10,9 @@ import TinyConstraints
 import Kingfisher
 
 public protocol ProductCellDelegate: AnyObject {
-    func plusButtonTapped(cellItem: ProductCellProtocol)
-    func deleteButtonTapped(cellItem: ProductCellProtocol)
+    func plusButtonTapped(count: Int, cellItem: ProductCellProtocol?)
+    func deleteButtonTapped(count: Int, cellItem: ProductCellProtocol?)
+    func showAlert()
 }
 
 public class ProductCell: UICollectionViewCell, ReusableView {
@@ -39,7 +40,7 @@ public class ProductCell: UICollectionViewCell, ReusableView {
     private let stepperView = StepperView()
     
     weak var viewModel: ProductCellProtocol?
-    public weak var delegate: StepperViewDelegate?
+    public weak var delegate: ProductCellDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -55,6 +56,11 @@ public class ProductCell: UICollectionViewCell, ReusableView {
     public func set(viewModel: ProductCellProtocol) {
         self.viewModel = viewModel
         configureContents()
+    }
+    
+    public override func prepareForReuse() {
+        super.prepareForReuse()
+        stepperView.count = 0
     }
 }
 
@@ -94,7 +100,6 @@ extension ProductCell {
     }
 }
 
-
 // MARK: - ConfigureContents
 extension ProductCell {
     
@@ -123,6 +128,27 @@ extension ProductCell {
     }
     
     private func configureStepperView() {
-        stepperView.delegate = delegate
+        stepperView.delegate = self
+        guard let stock = viewModel?.stock, let count = viewModel?.count else { return }
+        stepperView.stock = stock
+        stepperView.count = count
+    }
+}
+
+// MARK: - StepperViewDelegate
+extension ProductCell: StepperViewDelegate {
+    
+    public func showAlert() {
+        delegate?.showAlert()
+    }
+    
+    public func plusButtonTapped(count: Int) {
+        viewModel?.count = count
+        delegate?.plusButtonTapped(count: count, cellItem: viewModel)
+    }
+    
+    public func deleteButtonTapped(count: Int) {
+        viewModel?.count = count
+        delegate?.deleteButtonTapped(count: count, cellItem: viewModel)
     }
 }
