@@ -11,6 +11,8 @@
 		5702F6D028937DCD00839667 /* StackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6CF28937DCD00839667 /* StackView+Extensions.swift */; };
 		5702F6D9289488EB00839667 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6D8289488EB00839667 /* BadgeView.swift */; };
 		5702F6E42895FB6800839667 /* BigAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6E32895FB6800839667 /* BigAreaButton.swift */; };
+		5702F6F12896000400839667 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6EF2896000400839667 /* ProductTableViewCell.swift */; };
+		5702F6F22896000400839667 /* ProductTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5702F6F02896000400839667 /* ProductTableViewCellModel.swift */; };
 		5794728228888F3700F3C1D8 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */; };
 		5794728328888F3700F3C1D8 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726C28888F3700F3C1D8 /* Inter-Light.ttf */; };
 		5794728428888F3700F3C1D8 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */; };
@@ -50,6 +52,8 @@
 		5702F6CF28937DCD00839667 /* StackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StackView+Extensions.swift"; sourceTree = "<group>"; };
 		5702F6D8289488EB00839667 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		5702F6E32895FB6800839667 /* BigAreaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigAreaButton.swift; sourceTree = "<group>"; };
+		5702F6EF2896000400839667 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		5702F6F02896000400839667 /* ProductTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCellModel.swift; sourceTree = "<group>"; };
 		5794726B28888F3700F3C1D8 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		5794726C28888F3700F3C1D8 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		5794726D28888F3700F3C1D8 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
@@ -148,6 +152,23 @@
 			path = BadgeView;
 			sourceTree = "<group>";
 		};
+		5702F6ED2895FFD700839667 /* ProducCell */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6EF2896000400839667 /* ProductTableViewCell.swift */,
+				5702F6F02896000400839667 /* ProductTableViewCellModel.swift */,
+			);
+			path = ProducCell;
+			sourceTree = "<group>";
+		};
+		5702F6EE2895FFEB00839667 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				5702F6ED2895FFD700839667 /* ProducCell */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
 		5794725F28888F3700F3C1D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +231,7 @@
 		57E8DF26289365D500EF7490 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5702F6EE2895FFEB00839667 /* TableViews */,
 				57E8DF27289365DB00EF7490 /* CollectionViews */,
 			);
 			path = Cells;
@@ -443,6 +465,7 @@
 				FE73480527E716130019DB4F /* UIView+Extensions.swift in Sources */,
 				5702F6D028937DCD00839667 /* StackView+Extensions.swift in Sources */,
 				5702F6CD289377DF00839667 /* StepperView.swift in Sources */,
+				5702F6F12896000400839667 /* ProductTableViewCell.swift in Sources */,
 				5702F6D9289488EB00839667 /* BadgeView.swift in Sources */,
 				579472C5288DD6AC00F3C1D8 /* StringConstants.swift in Sources */,
 				579472C3288DD6A600F3C1D8 /* UIImage+Images.swift in Sources */,
@@ -454,6 +477,7 @@
 				5702F6E42895FB6800839667 /* BigAreaButton.swift in Sources */,
 				579472BB288DD69600F3C1D8 /* Fonts.swift in Sources */,
 				57E8DF302893662C00EF7490 /* ProductCellModel.swift in Sources */,
+				5702F6F22896000400839667 /* ProductTableViewCellModel.swift in Sources */,
 				579472C1288DD6A600F3C1D8 /* UIImage+Icons.swift in Sources */,
 				FE73480627E716130019DB4F /* UITableView+Extensions.swift in Sources */,
 				579472C7288DD76600F3C1D8 /* LocalizeManager.swift in Sources */,

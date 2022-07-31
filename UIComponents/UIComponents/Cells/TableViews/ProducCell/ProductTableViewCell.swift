@@ -1,23 +1,23 @@
 //
-//  ProductCell.swift
+//  ProductTableViewCell.swift
 //  UIComponents
 //
-//  Created by Sercan KAYA on 29.07.2022.
+//  Created by Sercan KAYA on 31.07.2022.
 //
 
 import UIKit
 import TinyConstraints
-import Kingfisher
 
-public protocol ProductCellDelegate: AnyObject {
-    func plusButtonTapped(count: Int, cellItem: ProductCellProtocol?)
-    func deleteButtonTapped(count: Int, cellItem: ProductCellProtocol?)
+
+public protocol ProductTableViewCellDelegate: AnyObject {
+    func plusButtonTapped(count: Int, cellItem: ProductTableViewCellProtocol?)
+    func deleteButtonTapped(count: Int, cellItem: ProductTableViewCellProtocol?)
     func showAlert()
 }
 
-public class ProductCell: UICollectionViewCell, ReusableView {
+public class ProductTableViewCell: UITableViewCell, ReusableView {
     
-    private let imageView: UIImageView = {
+    private let productImage: UIImageView = {
        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         return imageView
@@ -26,86 +26,87 @@ public class ProductCell: UICollectionViewCell, ReusableView {
     private let priceLabel: UILabel = {
        let label = UILabel()
         label.textColor = .appBlue
-        label.font = .systemFont(ofSize: 12, weight: .bold)
+        label.font = .systemFont(ofSize: 18, weight: .bold)
         return label
     }()
     
     private let titleLabel: UILabel = {
        let label = UILabel()
         label.textColor = .gray
-        label.font = .systemFont(ofSize: 12, weight: .bold)
+        label.font = .systemFont(ofSize: 16, weight: .bold)
         return label
     }()
     
     private let stepperView = StepperView()
     
-    weak var viewModel: ProductCellProtocol?
-    public weak var delegate: ProductCellDelegate?
+    weak var viewModel: ProductTableViewCellProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    public weak var delegate: ProductTableViewCellDelegate?
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubViews()
         configureContents()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        addSubViews()
         configureContents()
     }
     
-    public func set(viewModel: ProductCellProtocol) {
+    public func set(viewModel: ProductTableViewCellProtocol) {
         self.viewModel = viewModel
         configureContents()
-    }
-    
-    public override func prepareForReuse() {
-        super.prepareForReuse()
-        stepperView.count = 0
     }
 }
 
 // MARK: - UILayout
-extension ProductCell {
+extension ProductTableViewCell {
     
     private func addSubViews() {
-        addStepperView()
         addImageView()
-        addPriceLabel()
         addTitleLabel()
+        addPriceLabel()
+        addStepperView()
     }
-       
-    private func addStepperView() {
-        contentView.addSubview(stepperView)
-        stepperView.edgesToSuperview(excluding: [.bottom, .leading])
-        stepperView.width(bounds.width * 0.70)
-        stepperView.height(24)
+
+    private func addImageView() {
+        contentView.addSubview(productImage)
+        productImage.edgesToSuperview(excluding: [.trailing, .bottom], insets: .vertical(8) + .left(8))
+        productImage.size(.init(width: 100, height: 100))
     }
     
-    private func addImageView() {
-        contentView.addSubview(imageView)
-        imageView.edgesToSuperview(excluding: [.bottom, .top])
-        imageView.topToBottom(of: stepperView, offset: 8)
+    
+    private func addTitleLabel() {
+        contentView.addSubview(titleLabel)
+        titleLabel.leadingToTrailing(of: productImage, offset: 16)
+        titleLabel.top(to: productImage, offset: 24)
     }
     
     private func addPriceLabel() {
         contentView.addSubview(priceLabel)
-        priceLabel.edgesToSuperview(excluding: [.top, .bottom], insets: .horizontal(8))
-        priceLabel.topToBottom(of: imageView, offset: 8)
+        priceLabel.leading(to: titleLabel)
+        priceLabel.trailing(to: titleLabel)
+        priceLabel.topToBottom(of: titleLabel, offset: 8)
+        priceLabel.bottomToSuperview(offset: -24)
     }
     
-    private func addTitleLabel() {
-        contentView.addSubview(titleLabel)
-        titleLabel.edgesToSuperview(excluding: .top, insets: .horizontal(8) + .bottom(8))
-        titleLabel.topToBottom(of: priceLabel, offset: 8)
+    
+ private func addStepperView() {
+     contentView.addSubview(stepperView)
+     stepperView.edgesToSuperview(excluding: [.bottom, .leading, .top], insets: .right(8))
+     stepperView.leadingToTrailing(of: titleLabel, offset: 64)
+     stepperView.centerYToSuperview()
+     stepperView.height(24)
     }
 }
 
 // MARK: - ConfigureContents
-extension ProductCell {
+extension ProductTableViewCell {
     
     private func configureContents() {
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.gray.cgColor
+        selectionStyle = .none
         configureImageView()
         configurePriceLabel()
         configureTitleLabel()
@@ -114,7 +115,7 @@ extension ProductCell {
     
     private func configureImageView() {
         guard let url = viewModel?.image else { return }
-        imageView.kf.setImage(with: url.caseURL)
+        productImage.kf.setImage(with: url.caseURL)
     }
     
     private func configurePriceLabel() {
@@ -136,19 +137,16 @@ extension ProductCell {
 }
 
 // MARK: - StepperViewDelegate
-extension ProductCell: StepperViewDelegate {
-    
+extension ProductTableViewCell: StepperViewDelegate {
     public func showAlert() {
         delegate?.showAlert()
     }
     
     public func plusButtonTapped(count: Int) {
-        viewModel?.count = count
         delegate?.plusButtonTapped(count: count, cellItem: viewModel)
     }
     
     public func deleteButtonTapped(count: Int) {
-        viewModel?.count = count
         delegate?.deleteButtonTapped(count: count, cellItem: viewModel)
     }
 }

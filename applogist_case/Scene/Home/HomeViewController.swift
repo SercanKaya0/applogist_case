@@ -17,7 +17,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(fraction)), subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         group.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
-
+        
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.scrollDirection = .vertical
         let layout = UICollectionViewCompositionalLayout(section: section, configuration: config)
@@ -43,7 +43,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         addSubViews()
         configureContents()
         subscribeViewModel()
-        viewModel.viewDidLoad()
+        viewModel.viewDidLoad(viewController: self)
     }
 }
 
@@ -77,10 +77,9 @@ extension HomeViewController {
     }
     
     private func configureCollectionView() {
-        collectionView.delegate = self
         collectionView.dataSource = self
     }
-
+    
     private func configureNavigationBar() {
         navigationItem.title = L10n.HomeView.navigationTitle
         let barButton = UIBarButtonItem(customView: basketButton)
@@ -93,20 +92,14 @@ extension HomeViewController {
 extension HomeViewController {
     
     private func subscribeViewModel() {
-        
         viewModel.reloadData = { [weak self] in
             guard let self = self else { return }
             self.collectionView.reloadData()
         }
         
-        viewModel.countState = { [weak self] state in
+        viewModel.setBasketCount = { [weak self] count in
             guard let self = self else { return }
-            print(state)
-            if state == .plus {
-                self.badgeView.basketCount += 1
-            } else {
-                self.badgeView.basketCount -= 1
-            }
+            self.badgeView.basketCount = count
         }
     }
 }
@@ -120,11 +113,6 @@ extension HomeViewController {
     }
 }
 
-// MARK: - UICollectionViewDelegate
-extension HomeViewController: UICollectionViewDelegate {
-    
-}
-
 // MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
     
@@ -135,17 +123,41 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: ProductCell = collectionView.dequeueReusableCell(for: indexPath)
         if let viewModel = viewModel.productCellModel(indexPath: indexPath) {
-            cell.delegate = self
             cell.set(viewModel: viewModel)
+            cell.delegate = self
         }
         return cell
     }
 }
 
-// MARK: - StepperViewDelegate
-extension HomeViewController: StepperViewDelegate {
-   
-    func countState(tappedState: TappedState) {
-        viewModel.countState(tappedState: tappedState)
+// MARK: - ProductCellDelegate
+extension HomeViewController: ProductCellDelegate {
+    
+    func showAlert() {
+        viewModel.showAlert()
+    }
+    
+    func plusButtonTapped(count: Int, cellItem: ProductCellProtocol?) {
+        viewModel.plusButtonTapped(count: count, cellItem: cellItem)
+    }
+    
+    func deleteButtonTapped(count: Int, cellItem: ProductCellProtocol?) {
+        viewModel.deleteButtonTapped(count: count, cellItem: cellItem)
+    }
+}
+
+// MARK: - CheckOutViewControllerDelegate
+extension HomeViewController: CheckOutViewControllerDelegate {
+    
+    func didDelete(id: String?, count: Int) {
+        viewModel.didDelete(id: id, count: count)
+    }
+    
+    func didAppend(id: String?, count: Int) {
+        viewModel.didAppend(id: id, count: count)
+    }
+    
+    func didRemoveAllItems() {
+        viewModel.didRemoveAllItems()
     }
 }
