@@ -6,5 +6,5 @@
 //
 
 final class HomeRouter: Router, HomeRouter.Routes {
-    typealias Routes = CheckOutRoute
+    typealias Routes = CheckOutRoute & FloatRoute
 }
