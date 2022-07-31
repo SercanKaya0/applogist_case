@@ -7,13 +7,10 @@
 
 import UIKit
 
-public enum TappedState {
-    case plus
-    case remove
-}
-
 public protocol StepperViewDelegate: AnyObject {
-    func countState(tappedState: TappedState)
+    func plusButtonTapped(count: Int)
+    func deleteButtonTapped(count: Int)
+    func showAlert()
 }
 
 public class StepperView: UIView {
@@ -47,6 +44,8 @@ public class StepperView: UIView {
     
     public weak var delegate: StepperViewDelegate?
     
+    private var stockCount: Int = 0
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubViews()
@@ -62,6 +61,12 @@ public class StepperView: UIView {
         didSet {
             configureCountLabel()
             configureButtons()
+        }
+    }
+    
+    public var stock: Int = 0 {
+        willSet {
+            stockCount = newValue
         }
     }
 }
@@ -126,11 +131,11 @@ extension StepperView {
     
     @objc
     private func plusButtonTapped() {
-        if count <= 10 {
+        if count <= stockCount {
             self.count += 1
-            delegate?.countState(tappedState: .plus)
+            delegate?.plusButtonTapped(count: count)
         } else {
-            // Alert
+            delegate?.showAlert()
         }
     }
     
@@ -138,7 +143,7 @@ extension StepperView {
     private func deleteButtonTapped() {
         if count > 0 {
             self.count -= 1
-            delegate?.countState(tappedState: .remove)
+            delegate?.deleteButtonTapped(count: count)
         }
     }
 }
