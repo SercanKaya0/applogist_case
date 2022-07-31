@@ -14,19 +14,40 @@ public enum L10n {
   public static var bundle: Bundle?
 
   public enum CheckOutView {
+    /// Sepetinize ekleyebileceğiniz maks. ürün adetine ulaştınız.
+    public static var alertSubTitle: String { return L10n.tr("Localizable", "CheckOutView.alertSubTitle") }
+    /// Yetersiz Ürün
+    public static var alertTitle: String { return L10n.tr("Localizable", "CheckOutView.alertTitle") }
     /// Kapat
     public static var closeButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.closeButtonTitle") }
+    /// Sepeti Onayla
+    public static var confirmButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.confirmButtonTitle") }
     /// Sil
     public static var deleteButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.deleteButtonTitle") }
     /// Sepet
     public static var navigationTitle: String { return L10n.tr("Localizable", "CheckOutView.navigationTitle") }
-    /// Toplam
+    /// Toplam: 
     public static var priceLabelTitle: String { return L10n.tr("Localizable", "CheckOutView.priceLabelTitle") }
+    /// Tamam
+    public static var regularButtonTitle: String { return L10n.tr("Localizable", "CheckOutView.regularButtonTitle") }
+  }
+
+  public enum CustomAlert {
+    /// Sil
+    public static var destructiveButtonTitle: String { return L10n.tr("Localizable", "CustomAlert.destructiveButtonTitle") }
+    /// Vazgeç
+    public static var regularButtonTitle: String { return L10n.tr("Localizable", "CustomAlert.regularButtonTitle") }
   }
 
   public enum HomeView {
+    /// Sepetinize ekleyebileceğiniz maks. ürün adetine ulaştınız.
+    public static var alertSubTitle: String { return L10n.tr("Localizable", "HomeView.alertSubTitle") }
+    /// Yetersiz Ürün
+    public static var alertTitle: String { return L10n.tr("Localizable", "HomeView.alertTitle") }
     /// Mini Bakkal
     public static var navigationTitle: String { return L10n.tr("Localizable", "HomeView.navigationTitle") }
+    /// Tamam
+    public static var regularButtonTitle: String { return L10n.tr("Localizable", "HomeView.regularButtonTitle") }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

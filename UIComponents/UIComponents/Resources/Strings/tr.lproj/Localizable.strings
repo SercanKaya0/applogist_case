@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   UIComponents
 
@@ -8,9 +8,22 @@
 
 // MARK: - HomeView
 "HomeView.navigationTitle"  = "Mini Bakkal";
+"HomeView.alertTitle"  = "Yetersiz Ürün";
+"HomeView.alertSubTitle"  = "Sepetinize ekleyebileceğiniz maks. ürün adetine ulaştınız.";
+"HomeView.regularButtonTitle" = "Tamam";
 
 // MARK: CheckOutView
 "CheckOutView.navigationTitle"  = "Sepet";
 "CheckOutView.deleteButtonTitle"  = "Sil";
 "CheckOutView.closeButtonTitle"  = "Kapat";
 "CheckOutView.priceLabelTitle"  = "Toplam";
+"CheckOutView.alertTitle"  = "Sepeti Boşalt";
+"CheckOutView.alertSubTitle"  = "Sepetinizi Boşaltmak istediğinize emin misiniz?";
+"CheckOutView.alertTitle"  = "Yetersiz Ürün";
+"CheckOutView.alertSubTitle"  = "Sepetinize ekleyebileceğiniz maks. ürün adetine ulaştınız.";
+"CheckOutView.regularButtonTitle" = "Tamam";
+
+
+// MARK: - Custom Alert
+"CustomAlert.regularButtonTitle" = "Vazgeç";
+"CustomAlert.destructiveButtonTitle" = "Sil";
