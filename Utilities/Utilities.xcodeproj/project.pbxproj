@@ -24,6 +24,7 @@
 		FE4262DF2825AA08009CCA73 /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262D02825AA08009CCA73 /* NotificationNames.swift */; };
 		FE4262E02825AA08009CCA73 /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4262D12825AA08009CCA73 /* NotificationCenter+Extensions.swift */; };
 		FE7347EE27E7157A0019DB4F /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7347ED27E7157A0019DB4F /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE6DAA628971881004EDA68 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE6DAA528971881004EDA68 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		FE4262D12825AA08009CCA73 /* NotificationCenter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extensions.swift"; sourceTree = "<group>"; };
 		FE7347EA27E7157A0019DB4F /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7347ED27E7157A0019DB4F /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		FEE6DAA528971881004EDA68 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FE4262CC2825AA08009CCA73 /* Url+Extensions.swift */,
 				FE4262CD2825AA08009CCA73 /* Bundle+Extensions.swift */,
 				FE4262CE2825AA08009CCA73 /* DefaultKeys+Extensions.swift */,
+				FEE6DAA528971881004EDA68 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FE4262D22825AA08009CCA73 /* Clousers.swift in Sources */,
 				FE4262D52825AA08009CCA73 /* Int+Extension.swift in Sources */,
 				FE4262D42825AA08009CCA73 /* UIViewController+Extensions.swift in Sources */,
+				FEE6DAA628971881004EDA68 /* Double+Extensions.swift in Sources */,
 				FE4262DA2825AA08009CCA73 /* Share+Extension.swift in Sources */,
 				FE4262D32825AA08009CCA73 /* DeviceModel.swift in Sources */,
 				FE4262DC2825AA08009CCA73 /* Url+Extensions.swift in Sources */,
