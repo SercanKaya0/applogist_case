@@ -9,6 +9,10 @@ public extension UIColor {
   static var appBlue: UIColor {
       return Asset.Colors.appBlue.color
   }
+
+  static var appLightGreen: UIColor {
+      return Asset.Colors.appLightGreen.color
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
